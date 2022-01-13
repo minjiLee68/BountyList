@@ -9,7 +9,7 @@ import UIKit
 
 class BountyViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
-    let nameList = ["brook", "chopper", "franky", "nami", "robin", "sanji", "zoro"]
+    let nameList = ["brook", "chopper", "franky","luffy", "nami", "robin", "sanji", "zoro"]
     let bountyList = [33000000, 50, 44000000, 30000000, 1600000, 80000000, 77000000, 12000000]
     
     override func viewDidLoad() {
@@ -23,7 +23,14 @@ class BountyViewController: UIViewController, UITableViewDataSource, UITableView
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? ListCell else {
+            return UITableViewCell()
+        }
+        
+        let img = UIImage(named: "\(nameList[indexPath.row]).jpg")
+        cell.imgView.image = img
+        cell.nameLable.text = nameList[indexPath.row]
+        cell.bountyLable.text = "\(bountyList[indexPath.row])"
         return cell
     }
     
