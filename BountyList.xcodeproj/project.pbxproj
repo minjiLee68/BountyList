@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A9AFDC127907D9400FEEB50 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9AFDC027907D9400FEEB50 /* DetailViewController.swift */; };
 		0AD61C75278F2E3F00DE55F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD61C74278F2E3F00DE55F4 /* AppDelegate.swift */; };
 		0AD61C77278F2E3F00DE55F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD61C76278F2E3F00DE55F4 /* SceneDelegate.swift */; };
 		0AD61C7C278F2E3F00DE55F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD61C7A278F2E3F00DE55F4 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A9AFDC027907D9400FEEB50 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0AD61C71278F2E3F00DE55F4 /* BountyList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BountyList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD61C74278F2E3F00DE55F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AD61C76278F2E3F00DE55F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				0AD61C74278F2E3F00DE55F4 /* AppDelegate.swift */,
 				0AD61C88278F2EDE00DE55F4 /* BountyViewController.swift */,
+				0A9AFDC027907D9400FEEB50 /* DetailViewController.swift */,
 				0AD61C76278F2E3F00DE55F4 /* SceneDelegate.swift */,
 				0AD61C7A278F2E3F00DE55F4 /* Main.storyboard */,
 				0AD61C7D278F2E4000DE55F4 /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 				0AD61C75278F2E3F00DE55F4 /* AppDelegate.swift in Sources */,
 				0AD61C89278F2EDE00DE55F4 /* BountyViewController.swift in Sources */,
 				0AD61C77278F2E3F00DE55F4 /* SceneDelegate.swift in Sources */,
+				0A9AFDC127907D9400FEEB50 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
