@@ -15,7 +15,7 @@ class BountyViewController: UIViewController, UITableViewDataSource, UITableView
     
     // UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 5
     }
     
     
@@ -30,4 +30,10 @@ class BountyViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("--> \(indexPath.row)")
     }
+}
+
+class ListCell: UITableViewCell {
+    @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var nameLable: UILabel!
+    @IBOutlet weak var bountyLable: UILabel!
 }
