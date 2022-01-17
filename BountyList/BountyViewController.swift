@@ -1,14 +1,6 @@
-//
-//  BountyViewController.swift
-//  BountyList
-//
-//  Created by 이민지 on 2022/01/13.
-//
-
 import UIKit
 
 class BountyViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-    
     // MVVM
     
     // Model
@@ -80,41 +72,7 @@ class BountyViewController: UIViewController, UICollectionViewDataSource, UIColl
         let height: CGFloat = width * 10/7 + textAreaHeight
         return CGSize(width: width, height: height)
     }
-    
-    // UITableViewDataSource
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return viewModel.numOfBountyInfoList
-//    }
-//
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? ListCell else {
-//            return UITableViewCell()
-//        }
-//
-//        let bountyInfo = viewModel.bountyInfo(at: indexPath.row)
-//        cell.update(info: bountyInfo)
-//        return cell
-//    }
-//
-//    // UITableViewDelegate
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        print("--> \(indexPath.row)")
-//        performSegue(withIdentifier: "", sender: indexPath.row)
-//    }
 }
-
-//class ListCell: UITableViewCell {
-//    @IBOutlet weak var imgView: UIImageView!
-//    @IBOutlet weak var nameLable: UILabel!
-//    @IBOutlet weak var bountyLable: UILabel!
-//    
-//    func update(info: BountyInfo) {
-//        imgView.image = info.image
-//        nameLable.text = info.name
-//        bountyLable.text = "\(info.bounty)"
-//    }
-//}
 
 class BountyViewModel {
     let bountyInfoList: [BountyInfo] = [
