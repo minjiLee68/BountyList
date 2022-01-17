@@ -109,6 +109,7 @@ class GridCell: UICollectionViewCell {
     
     func update(info: BountyInfo) {
         imgView.image = info.image
+        
         nameLable.text = info.name
         bountyLable.text = "\(info.bounty)"
     }
