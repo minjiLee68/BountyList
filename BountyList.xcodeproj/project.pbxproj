@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A8800E127954F3400A94B52 /* BountyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8800E027954F3400A94B52 /* BountyInfo.swift */; };
 		0A9AFDC127907D9400FEEB50 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9AFDC027907D9400FEEB50 /* DetailViewController.swift */; };
 		0AD61C75278F2E3F00DE55F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD61C74278F2E3F00DE55F4 /* AppDelegate.swift */; };
 		0AD61C77278F2E3F00DE55F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD61C76278F2E3F00DE55F4 /* SceneDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A8800E027954F3400A94B52 /* BountyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountyInfo.swift; sourceTree = "<group>"; };
 		0A9AFDC027907D9400FEEB50 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0AD61C71278F2E3F00DE55F4 /* BountyList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BountyList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD61C74278F2E3F00DE55F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				0AD61C74278F2E3F00DE55F4 /* AppDelegate.swift */,
 				0AD61C88278F2EDE00DE55F4 /* BountyViewController.swift */,
+				0A8800E027954F3400A94B52 /* BountyInfo.swift */,
 				0A9AFDC027907D9400FEEB50 /* DetailViewController.swift */,
 				0AD61C76278F2E3F00DE55F4 /* SceneDelegate.swift */,
 				0AD61C7A278F2E3F00DE55F4 /* Main.storyboard */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A8800E127954F3400A94B52 /* BountyInfo.swift in Sources */,
 				0AD61C75278F2E3F00DE55F4 /* AppDelegate.swift in Sources */,
 				0AD61C89278F2EDE00DE55F4 /* BountyViewController.swift in Sources */,
 				0AD61C77278F2E3F00DE55F4 /* SceneDelegate.swift in Sources */,

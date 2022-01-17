@@ -25,21 +25,8 @@ class BountyViewController: UIViewController, UITableViewDataSource, UITableView
     // > BountyViewModel을 만들고, 뷰 레이어에서 필요한 메서드 만들기
     // > 모델 가지고 있기,, BountyInfo들
     
-//    let bountyInfoList: [BountyInfo] = [
-//        BountyInfo(name: "brook", bounty: 33000000),
-//        BountyInfo(name: "chopper", bounty: 50),
-//        BountyInfo(name: "franky", bounty: 44000000),
-//        BountyInfo(name: "luffy", bounty: 30000000),
-//        BountyInfo(name: "nami", bounty: 1600000),
-//        BountyInfo(name: "robin", bounty: 80000000),
-//        BountyInfo(name: "sanji", bounty: 77000000),
-//        BountyInfo(name: "zoro", bounty: 12000000)
-//    ]
-    
     let viewModel = BountyViewModel()
     
-//    let nameList = ["brook", "chopper", "franky","luffy", "nami", "robin", "sanji", "zoro"]
-//    let bountyList = [33000000, 50, 44000000, 30000000, 1600000, 80000000, 77000000, 12000000]
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // DetailViewController 한테 데이터 줌
@@ -48,14 +35,9 @@ class BountyViewController: UIViewController, UITableViewDataSource, UITableView
             
             if let index = sender as? Int {
                 
-//                let bountyInfo = bountyInfoList[index]
                 let bountyInfo = viewModel.bountyInfo(at: index)
-                
-//                vc?.name = nameList[index]
-//                vc?.bounty = bountyList[index]
                 vc?.viewModel.update(model: bountyInfo)
-//                vc?.bou = bountyInfo.name
-//                vc?.bounty = bountyInfo.bounty
+                
             }
         }
     }
@@ -66,8 +48,6 @@ class BountyViewController: UIViewController, UITableViewDataSource, UITableView
     
     // UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return bountyList.count
-//        return bountyInfoList.count
         return viewModel.numOfBountyInfoList
     }
     
@@ -77,17 +57,7 @@ class BountyViewController: UIViewController, UITableViewDataSource, UITableView
             return UITableViewCell()
         }
         
-//        let img = UIImage(named: "\(nameList[indexPath.row]).jpg")
-//        cell.imgView.image = img
-//        cell.nameLable.text = nameList[indexPath.row]
-//        cell.bountyLable.text = "\(bountyList[indexPath.row])"
-        
-//        let bountyInfo = bountyInfoList[indexPath.row]
         let bountyInfo = viewModel.bountyInfo(at: indexPath.row)
-//        cell.imgView.image = bountyInfo.image
-//        cell.nameLable.text = bountyInfo.name
-//        cell.bountyLable.text = "\(bountyInfo.bounty)"
-        
         cell.update(info: bountyInfo)
         return cell
     }
@@ -108,20 +78,6 @@ class ListCell: UITableViewCell {
         imgView.image = info.image
         nameLable.text = info.name
         bountyLable.text = "\(info.bounty)"
-    }
-}
-
-struct BountyInfo {
-    let name: String
-    let bounty: Int
-    
-    var image: UIImage? {
-        return UIImage(named: "\(name).jpg")
-    }
-    
-    init(name: String, bounty: Int) {
-        self.name = name
-        self.bounty = bounty
     }
 }
 
